@@ -20,7 +20,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 
 1. `pinet_input.exe` を実行する
 2. タスクバーの右下にHアイコンが現れるのを確認する<br>
-   [![exeIcon](https://user-images.githubusercontent.com/69337126/91270380-81bc8780-e7b3-11ea-964c-1780bcbddd5b.png)](起動確認)
+   ![exeIcon](https://user-images.githubusercontent.com/69337126/91275802-9735af80-e7bb-11ea-9a33-1dc72ec7c4df.png)
 <br>
 <br>
 
@@ -33,7 +33,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 
 1. <kbd>無変換とqを同時押し</kbd>する
 2. Hアイコンを右クリックして<kbd>Exit</kbd>をクリックします。<br>
-   [![exit](https://user-images.githubusercontent.com/69337126/91270383-82551e00-e7b3-11ea-9224-f05b3a62d865.png)]()
+   ![exit](https://user-images.githubusercontent.com/69337126/91275803-97ce4600-e7bb-11ea-87ac-194ed9fe9444.png)
 <br>
 <br>
 
@@ -56,7 +56,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 ### エクセルの初期設定
 
 まず初めにエクセルの検索設定を以下のように行ってください。<br>
-[![excelFind](https://user-images.githubusercontent.com/69337126/91272155-42436a80-e7b6-11ea-93f5-5599360a4dfd.png)]()
+![excelFind](https://user-images.githubusercontent.com/69337126/91275804-9866dc80-e7bb-11ea-8b93-0b05b888574c.png)
 <br>
 <br>
 
