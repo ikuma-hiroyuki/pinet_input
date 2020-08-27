@@ -47,6 +47,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 ```javascript
 javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();
 ```
+![![bookmarklet](https://user-images.githubusercontent.com/69337126/91371605-6e112f80-e84c-11ea-91ae-27543dffd045.png)]
 2. 登録したブックマークをクリックするとチェックボックスが全てオンになります
 <br>
 <br>
