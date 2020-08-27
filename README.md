@@ -8,11 +8,11 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 
 1. 詳細説明<br>
    <kbd>F1</kbd>
-2. PI-NETの図番をエクセルで検索します。<br>
+2. ⏯ PI-NETの図番をエクセルで検索します。<br>
    <kbd>無変換+f</kbd>
 3. このショートカットキー機能を終了させます<br>
    <kbd>無変換+q</kbd>
-4. チェックボックス全てオンはF1詳細キーで詳細を確認してください
+4. 🅿️ チェックボックス全てオンはF1詳細キーで詳細を確認してください
 <br>
 <br>
 
@@ -39,36 +39,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 <br>
 
 
-
-## 1. PI-NETのチェックボックスのオンオフ
-
-手順は以下のとおりです。
-1. 以下のコードをブックマークレットにしてブックマークバーなどに登録してください。
-```javascript
-javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();
-```
-![![bookmarklet](https://user-images.githubusercontent.com/69337126/91371605-6e112f80-e84c-11ea-91ae-27543dffd045.png)]
-
-2. 登録したブックマークをクリックするとチェックボックスが全てオンになります
-
-![bookmarkButton](https://user-images.githubusercontent.com/69337126/91371746-d2cc8a00-e84c-11ea-8c22-545aa57dee60.png)
-<br>
-<br>
-
-
-
-## 2. 選択した部品番号をエクセルで検索 →  PI-NETに入力
-
-### エクセルの初期設定
-
-まず初めにエクセルの検索設定を以下のように行ってください。<br>
-![excelFind](https://user-images.githubusercontent.com/69337126/91275804-9866dc80-e7bb-11ea-8b93-0b05b888574c.png)
-<br>
-<br>
-
-
-
-### 半自動入力の手順
+## ⏯ 半自動入力の手順
 
 選択した部品番号をエクセルで検索 →  PI-NETに入力する手順は以下のとおりです。
 
@@ -81,3 +52,29 @@ javascript:(function (){var inputs = document.getElementsByTagName('input');for(
    1. エクセルの員数セルには色が塗られます
    2. PI-NETは部品番号をダブルクリックした位置を基準に自動操作するので、別のところをクリックしないよう注意してください
 5. 上記1~4を繰り返す
+<br>
+<br>
+
+
+## 🅿️ PI-NETのチェックボックスのオンオフ
+
+手順は以下のとおりです。
+### 1. 以下のコードをブックマークレットにしてブックマークバーなどに登録してください。
+```javascript
+javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();
+```
+
+![bookmarklet](https://user-images.githubusercontent.com/69337126/91371605-6e112f80-e84c-11ea-91ae-27543dffd045.png)
+
+### 2. 登録したブックマークをクリックするとチェックボックスが全てオンになります
+
+![bookmarkButton](https://user-images.githubusercontent.com/69337126/91371746-d2cc8a00-e84c-11ea-8c22-545aa57dee60.png)
+<br>
+<br>
+
+## 2. 選択した部品番号をエクセルで検索 →  PI-NETに入力
+
+### エクセルの初期設定
+
+まず初めにエクセルの検索設定を以下のように行ってください。<br>
+![excelFind](https://user-images.githubusercontent.com/69337126/91275804-9866dc80-e7bb-11ea-8b93-0b05b888574c.png)
