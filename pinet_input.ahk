@@ -83,12 +83,3 @@ GetSelectionString(){
     selectionStr := StrReplace(selectionStr, A_Space,"")
     Return selectionStr
 }
-
-; チェックボックスを全てオンにする
-vk1d & e::
-    SetKeyDelay,1
-    Loop, 13{
-        SendEvent,{tab 5}
-        SendEvent,{space}
-    }
-    Return

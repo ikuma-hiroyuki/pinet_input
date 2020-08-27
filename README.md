@@ -6,12 +6,13 @@
 
 PI-NETへの入力を補助するショートカットキーを提供します。
 
-1. PI-NETのチェックボックスを全てOn(またはOff)。
-   <kbd>無変換+e</kbd>
-2. PI-NETの図番をエクセルで検索します。
+1. 詳細説明<br>
+   <kbd>F1</kbd>
+2. PI-NETの図番をエクセルで検索します。<br>
    <kbd>無変換+f</kbd>
-3. このショートカットキー機能を終了させます
+3. このショートカットキー機能を終了させます<br>
    <kbd>無変換+q</kbd>
+4. チェックボックス全てオンはF1詳細キーで詳細を確認してください
 <br>
 <br>
 
@@ -19,7 +20,7 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 ## まず始めに
 
 1. `pinet_input.exe` を実行する
-2. タスクバーの右下にHアイコンが現れるのを確認する<br>
+2. タスクバーの右下にHアイコンが現れる<br>
    ![exeIcon](https://user-images.githubusercontent.com/69337126/91275802-9735af80-e7bb-11ea-9a33-1dc72ec7c4df.png)
 <br>
 <br>
@@ -42,10 +43,11 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 ## 1. PI-NETのチェックボックスのオンオフ
 
 手順は以下のとおりです。
-
-- **先頭**のチェックボックスをクリックし<kbd>無変換とeを同時押しする</kbd>
-
-※ 13回チェックボックス押すという設定なので先頭以外をクリックして実行しないでください
+1. 以下のコードをブックマークレットにしてブックマークバーなどに登録してください。
+```javascript
+javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();
+```
+2. 登録したブックマークをクリックするとチェックボックスが全てオンになります
 <br>
 <br>
 
