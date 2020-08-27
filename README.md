@@ -45,34 +45,33 @@ PI-NETへの入力を補助するショートカットキーを提供します�
 まず初めにエクセルの検索設定を以下のように行ってください。<br>
 ![excelFind](https://user-images.githubusercontent.com/69337126/91275804-9866dc80-e7bb-11ea-8b93-0b05b888574c.png)
 
+<br>
+<br>
 
-PI-NET → エクセルで検索 → PI-NETに入力する手順は以下のとおりです。
-
-手順
+### PI-NET → エクセルで検索する手順は以下のとおりです。
 1. 検索対象のエクセルファイルを開いておく。
    (対象以外のエクセルファイルは全て閉じておいて下さい)
 2. PI-NETの支給部品列の部品番号をダブルクリックして版番号全体を選択状態にする。
    (このとき、空白文字も一緒に選択される場合がありますが問題ありません)
 3. <kbd>無変換とfを同時押し</kbd>するとエクセルで検索します。
-4. 検索がヒットしたら再度<kbd>無変換とfを同時押し</kbd>するとPI-NETに員数を入力します。
-   1. エクセルの員数セルには色が塗られます
-   2. PI-NETは部品番号をダブルクリックした位置を基準に自動操作するので、別のところをクリックしないよう注意してください
-5. 上記1~4を繰り返す
 <br>
 <br>
 
-## 🔍 選択した部品番号をエクセルで検索 →  PI-NETに入力
+### エクセル → PI-NETに員数入力する手順
+PI-NETからの図番検索にヒットしたら
+   1. <kbd>無変換とfを同時押し</kbd>するとPI-NETに員数を入力します。
 
+注意点
+   - エクセルの員数セルには色が塗られます
+   - PI-NETは部品番号をダブルクリックした位置を基準に自動操作するので、別のところをクリックしないよう注意してください
 
-## 🅿️ PI-NETのチェックボックスのオンオフ
+## ✅ PI-NETのチェックボックスのオンオフ
 
 手順は以下のとおりです。
 ### 1. 以下のコードをブックマークレットにしてブックマークバーなどに登録してください。
 ```javascript
 javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();
 ```
-[チェックボックスオン](<a href="javascript
-javascript:(function (){var inputs = document.getElementsByTagName('input');for(var i=0; ; i++){for (var j=0; j < inputs.length; j ++) {var e = inputs[j];if (e.type == 'checkbox')e.checked = true;}if(i < window.frames.length){try {inputs = window.frames[i].document.getElementsByTagName('input');}catch(e){}}else{break;}}})();">チェックボックスオン</a>)
 
 ![bookmarklet](https://user-images.githubusercontent.com/69337126/91371605-6e112f80-e84c-11ea-91ae-27543dffd045.png)
 
