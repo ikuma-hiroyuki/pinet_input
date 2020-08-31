@@ -21,7 +21,6 @@ startup:
     MsgBox,, % "PI-NET半自動入力のショートカットキー"
             ,% "F1キー `t`t 詳細説明表示 `r"
             .  "無変換 + f `t 図番検索/員数入力 `r"
-            .  "無変換 + e `t チェックボックスオンオフ `r"
             .  "無変換 + q `t 終了"
     Return
 
@@ -63,7 +62,7 @@ PiNet2Excel(){
 Excel2PiNet(){
     send,^f
     send,{esc 2}
-    send,{tab 9}
+    send,{tab 8}
     send,!hh
     sleep,200
     SendEvent,{up 3}
